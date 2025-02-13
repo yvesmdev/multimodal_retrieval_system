@@ -35,12 +35,12 @@ This project leverages **natural language processing (NLP)** and **image process
 ## **Installation & Setup**
 
 ### **Prerequisites**
-- Python 3.x
+- Python 3.x (Anaconda distribution)
 - Node.js & npm
 - Flask
 - React.js dependencies
 
 ### **Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/yvesmdev/multimodal_retrieval_system.git
+cd multimodal_retrieval_system
