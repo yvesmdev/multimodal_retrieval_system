@@ -2,17 +2,11 @@
 
 ## Overview
 
-This project leverages **natural language processing (NLP)** and **image processing** to allow users to search for images using descriptive queries. The system uses **text similarity techniques** and **pre-trained image captioning models** to match user inputs with relevant images.
+This project leverages **natural language processing (NLP)** and **image processing** to allow users to search for images using descriptive queries. Bonus: Extending the system (or providing an architectural design) to show what the system would look like if it catered for disabled people, including blind people.
 
-## Features
+## **System Preview**
 
-- Retrieve images using natural language queries.
-- Implements **TF-IDF Cosine Similarity, BERT**, and other NLP techniques.
-- Uses **image captioning models** to label and categorize images.
-- Supports **real-time search** with efficient retrieval mechanisms.
-- Built with **React.js for the front-end** and **Flask API for the back-end**.
-
----
+<img width="1419" alt="design screenshot" src="https://github.com/user-attachments/assets/ed368971-95bd-4fb3-859e-89566c04315e" />
 
 ## **Technology Stack**
 
