@@ -1,4 +1,4 @@
-# AI-Powered Image Retrieval System (In Active Improvement)
+# AI-Powered Image Retrieval System (First Draft - In Active Improvement)
 
 ## Overview
 
