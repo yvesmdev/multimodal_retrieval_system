@@ -5,7 +5,11 @@ from flask.json import JSONEncoder
 import decimal
 import os
 import pandas as pd
-import random
+
+#--model imports
+import dill as pickle 
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 app = Flask(__name__)
 CORS(app)
@@ -26,14 +30,22 @@ def fect_test_response():
     desc = request.args.get('desc') #get query description    return 'flask_api ok'
     k = int(request.args.get('k')) #kumber of retrievals
     print("K:",k)
-    message = desc.upper()
+   
+    with open('../../analytics/image_recommender_model_vitgpt2_tidf_files.pkl', 'rb') as f:
+        system_image_recommender = pickle.load(f)
+        tagged_sample_df = pickle.load(f)
+        tfidf = pickle.load(f)
+        X_matrix = pickle.load(f)
+    
+    text = desc
+    tagger = 'tagging_vitgpt2'
+    output_df = system_image_recommender(tagged_sample_df,tagger,tfidf,
+                                X_matrix,text,thr_=0.0,top_n=k)
 
-    img_df = pd.read_csv('../../sample_images/sample_images.csv')
-    Ns = len(img_df)
-    sample_ids = random.sample(range(0,Ns-1),k)
-    sample_df = img_df.iloc[sample_ids,:]#get sample image subset
 
-    image_list = sample_df.file_name.tolist()
+    image_list = output_df.file_name.tolist() #get imagelist
+    score_list = output_df.sim.tolist() #get similarity list
+
     available_images = os.listdir(app.config["UPLOAD_FOLDER"])#read all available images
     filtered_images = [img for img in available_images if img in image_list]
     #generate url for filter images
@@ -41,7 +53,7 @@ def fect_test_response():
     
     response_list = []
     for i in range(len(image_urls)):
-        img = {'img_url':image_urls[i], 'score':round(random.uniform(0,1),3)}
+        img = {'img_url':image_urls[i], 'score':round(score_list[i],3)}
         response_list.append(img)
 
     #print(response_list)
