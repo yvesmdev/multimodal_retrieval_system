@@ -19,7 +19,7 @@ const AnalyticsForm = ()=>{
     const handleSubmit = (e) => {
       {/*e.preventDefault(); // Prevent form from refreshing the page*/}
       // Send GET request to Flask API with query parameters from form inputs
-      const apiUrl = "http://127.0.0.1:5000/api/crapp/query?desc="+desc;
+      const apiUrl = "http://127.0.0.1:5002/api/mmsys/query?desc="+desc;
   
       fetch(apiUrl)
         .then((res) => res.json())
