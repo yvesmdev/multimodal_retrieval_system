@@ -2,7 +2,7 @@
 
 ## Overview
 
-This folder contains **three Jupyter notebooks** used to build a **pickle-based image recommender model**. The process involves **sampling real images, tagging them with captions, and developing a text-image matching model** using **TF-IDF and Cosine Similarity**. The final trained model is serialized into a **pickle file (`image_recommender_model_vitgpt2_tidf_files.pkl`)**, which will be used by the Flask API for image retrieval.
+This folder contains **three Jupyter notebooks** used to build a **pickle-based image recommender model**. The process involves **sampling real images, tagging them with captions, and developing a text-image matching model** using **TF-IDF/WordEmbedding/BERT and Cosine Similarity**. The final trained model is serialized into a **pickle file (`image_recommender_model_vitgpt2_tidf_files.pkl`)**, which will be used by the Flask API for image retrieval.
 
 ---
 
