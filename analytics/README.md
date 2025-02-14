@@ -9,7 +9,7 @@ This folder contains **three Jupyter notebooks** used to build a **pickle-based 
 ## **Tasks Performed**
 
 ### **1. Image Sampling**
-- **Notebook**: `image-sorting-notebook.ipynb`
+- **Notebook**: `NonAI_Images_Dataset_Sampling.ipynb`
 - **Objective**: Extract **500 real images** from a database containing a mix of **AI-generated and real images**.
 - **Process**:
   - Analyzes metadata to distinguish real vs AI-generated images.
