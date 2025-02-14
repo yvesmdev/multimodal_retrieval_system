@@ -21,7 +21,7 @@ This project leverages **natural language processing (NLP)** and **image process
 - **Image Captioning Models** – Assigns text labels to images using pre-training captioning models.
 - **Text Similarity Matching**:
   - TF-IDF with Cosine Similarity
-  - Word embedding and BERT-based sentence embeddings (To be tested)
+  - Word embedding and BERT-based sentence embeddings (In testing)
 
 ---
 
