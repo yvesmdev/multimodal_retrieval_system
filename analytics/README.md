@@ -13,11 +13,11 @@ This folder contains **three Jupyter notebooks** used to build a **pickle-based 
 - **Objective**: Extract **500 real images** from a database containing a mix of **AI-generated and real images**.
 - **Process**:
   - Analyzes metadata to distinguish real vs AI-generated images.
-  - Randomly selects 500 real images for the recommender model.
+  - Randomly select 500 real images for the recommender model.
   - Saves the selected dataset for further processing.
 
 ### **2. Image Tagging**
-- **Notebook**: `Image Tagging and Matching Analysis.ipynb`
+- **Notebook**: `Captioning_ModelsBased_Image_Tagging.ipynb`
 - **Objective**: Generate **textual descriptions** for the sampled images using the **GPT-2 captioning model**.
 - **Process**:
   - Uses a **pre-trained GPT-2 model** to generate image captions.
