@@ -1,4 +1,4 @@
-# Analytics for Image Recommender Model
+# Analytics for Text Query Image Recommender Model
 
 ## Overview
 
