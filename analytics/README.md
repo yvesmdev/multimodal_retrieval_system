@@ -25,10 +25,10 @@ This folder contains **three Jupyter notebooks** used to build a **pickle-based 
   - Stores image-caption pairs for further analysis.
 
 ### **3. Text-Image Matching & Model Training**
-- **Notebook**: `text-image-matching.ipynb`
-- **Objective**: Implement **TF-IDF and Cosine Similarity** for text-based image retrieval and save a **pickle model**.
+- **Notebook**: `Text2Text_Semantic_Matching_Algorithms.ipynb`
+- **Objective**: Implement **TF-IDF/WordEmbedding/BERT and Cosine Similarity** for text-based image retrieval and save a **pickle model**.
 - **Process**:
-  - Converts image captions into vectorized representations using **TF-IDF**.
+  - Converts image captions into vectorized representations using **TF-IDF/WordEmbedding/BERT**.
   - Uses **Cosine Similarity** to measure query-image relevance.
   - Trains a **lightweight recommendation model** for real-time query matching.
   - Serializes the trained model as **`image_recommender_model_vitgpt2_tidf_files`** for Flask API integration.
