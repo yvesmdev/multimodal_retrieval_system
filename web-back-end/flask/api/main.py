@@ -14,7 +14,7 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)
 
-UPLOAD_FOLDER = os.path.abspath(os.path.join(os.getcwd(), "../../sample_images"))
+UPLOAD_FOLDER = os.path.abspath(os.path.join(os.getcwd(), "../../sample_imagesv2"))
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 #modifing JSON Encoder
@@ -31,7 +31,7 @@ def fect_test_response():
     k = int(request.args.get('k')) #kumber of retrievals
     print("K:",k)
    
-    with open('../../analytics/image_recommender_model_vitgpt2_tidf_files.pkl', 'rb') as f:
+    with open('../../analytics/image_recommender_model_vitgpt2_tidf_files_2025_02_19_17_10_26.pkl', 'rb') as f:
         system_image_recommender = pickle.load(f)
         tagged_sample_df = pickle.load(f)
         tfidf = pickle.load(f)
