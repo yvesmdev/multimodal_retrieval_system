@@ -18,7 +18,7 @@ This folder contains **three Jupyter notebooks** used to build a **pickle-based 
 
 ### **2. Image Tagging**
 - **Notebook**: `Captioning_ModelsBased_Image_Tagging.ipynb`
-- **Objective**: Generate **textual descriptions** for the sampled images using the **GPT-2 captioning model**.
+- **Objective**: Generate **textual descriptions** for the sampled images using the **Florence-2 captioning model**.
 - **Process**:
   - Uses a **pre-trained GPT-2 model** to generate image captions.
   - Cleans and normalizes the captions for improved consistency.
