@@ -17,8 +17,8 @@ This project leverages **natural language processing (NLP)** and **image process
 - **Flask (Python)** – API handling requests.
 
 ### Data Processing & AI
-- **Random Dataset Sampling** – Uses a non-AI-generated image dataset extracted from test_data_v2 (https://www.kaggle.com/datasets/alessandrasala79/ai-vs-human-generated-dataset/data?select=test_data_v2).
-- **Image Captioning Models** – Assigns text labels to images using pre-training captioning models.
+- **Random Dataset Sampling** – Uses a 500 image dataset sample extracted from test_data_v2 (https://www.kaggle.com/datasets/alessandrasala79/ai-vs-human-generated-dataset/data?select=test_data_v2).
+- **Image Captioning Models** – Assigns text labels to images using **Florence2 pre-training captioning** model.
 - **Text Similarity Matching**:
   - TF-IDF with Cosine Similarity
   - Word embedding and BERT-based sentence embeddings
