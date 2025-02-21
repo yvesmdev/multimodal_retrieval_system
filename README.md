@@ -1,4 +1,4 @@
-# AI-Powered Image Retrieval System (First Prototype - In Active Improvement)
+# AI-Powered Image Retrieval System (In Active Improvement)
 
 ## Overview
 
@@ -21,7 +21,8 @@ This project leverages **natural language processing (NLP)** and **image process
 - **Image Captioning Models** – Assigns text labels to images using pre-training captioning models.
 - **Text Similarity Matching**:
   - TF-IDF with Cosine Similarity
-  - Word embedding and BERT-based sentence embeddings (In testing)
+  - Word embedding and BERT-based sentence embeddings
+  - Final Matching Algorithm: **Hybrid TF-IDF-Word2Vec Embedding**
 
 ---
 
