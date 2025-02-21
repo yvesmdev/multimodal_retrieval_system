@@ -34,12 +34,22 @@ This project leverages **natural language processing (NLP)** and **image process
 ## **Installation & Setup**
 
 ### **Prerequisites**
-- Python 3.x (Anaconda distribution)
+- Python 3.x + requirements.txt
 - Node.js & npm
 - Flask
 - React.js dependencies
+  
+## Analytics Test
+Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/analytics"> README file</a>
+
+## Backend Setup
+Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/web-back-end"> README file</a>
+
+## Frontend Setup
+Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/web-front-end"> README file</a>
 
 ### **Clone the Repository**
 ```sh
 git clone https://github.com/yvesmdev/multimodal_retrieval_system.git
+**default_branch: florence_embedding**
 cd multimodal_retrieval_system
