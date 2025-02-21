@@ -6,7 +6,8 @@ This project leverages **natural language processing (NLP)** and **image process
 
 ## **System Preview**
 
-<img width="1419" alt="design screenshot" src="https://github.com/user-attachments/assets/ed368971-95bd-4fb3-859e-89566c04315e" />
+<img width="1380" alt="Screenshot 2025-02-21 at 15 35 45" src="https://github.com/user-attachments/assets/63a5028e-380a-4b16-aa65-8e543c6f3c64" />
+
 
 ## **Technology Stack**
 
