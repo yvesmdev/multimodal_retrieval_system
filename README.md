@@ -40,13 +40,13 @@ This project leverages **natural language processing (NLP)** and **image process
 - React.js dependencies
   
 ## Analytics Test
-Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/analytics"> README file</a>
+Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/analytics" target="_blank"> README file</a>
 
 ## Backend Setup
-Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/web-back-end"> README file</a>
+Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/web-back-end" target="_blank"> README file</a>
 
 ## Frontend Setup
-Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/web-front-end"> README file</a>
+Click on the following <a href="https://github.com/yvesmdev/multimodal_retrieval_system/tree/florence_embedding/web-front-end" target="_blank"> README file</a>
 
 ### **Clone the Repository**
 ```sh
