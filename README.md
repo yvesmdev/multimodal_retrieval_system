@@ -14,9 +14,7 @@ This project leverages **natural language processing (NLP)** and **image process
 
 ## **System Demo**
 
-<video controls>
-  <source src="https://github.com/yvesmdev/multimodal_retrieval_system/blob/florence_embedding/web-front-end/demo/demo.mp4" type ="video/mp4">
-</video>
+Click <a href="https://drive.google.com/file/d/1pjc6ZWKiBJWZp_zcUDvawiU0fBRTn9Fu/view?usp=drive_link"> here to see the system demo </a>
 
 ## **Suggested Augmented Architecture**
 
