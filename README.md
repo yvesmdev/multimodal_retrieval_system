@@ -4,6 +4,10 @@
 
 This project leverages **natural language processing (NLP)** and **image processing** to allow users to search for images using descriptive queries. Bonus: Extending the system (or providing an architectural design) to show what the system would look like if it catered for disabled people, including blind people.
 
+## **System Architecture**
+
+![system](https://github.com/user-attachments/assets/5794c03c-6d08-45f1-a7e3-0f13ee09d4cb)
+
 ## **System Preview**
 
 <img width="1380" alt="Screenshot 2025-02-21 at 15 35 45" src="https://github.com/user-attachments/assets/63a5028e-380a-4b16-aa65-8e543c6f3c64" />
