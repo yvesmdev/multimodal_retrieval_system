@@ -1,3 +1,12 @@
+#https://www.youtube.com/watch?v=vsjC4dxpS3g
+#https://www.youtube.com/watch?v=ncua01HTxis
+#https://www.youtube.com/watch?v=fOjuwecPgfY
+#pip install pipreqs
+#pipreqs /path/to/your/project --force
+#sudo rm -r /tmp/*
+#scp requirements.txt root@159.223.47.49:ms-server/web-back-end/flask/
+#pip install -r requirements.txt 
+
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 #from flask import current_app as app
@@ -5,17 +14,33 @@ from flask.json import JSONEncoder
 import decimal
 import os
 import pandas as pd
-
 #--model imports
 import dill as pickle 
-from sklearn.metrics.pairwise import cosine_similarity
+from nltk.corpus import stopwords
+import re
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
 import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity 
+#------------------------------------------------------->
 
 app = Flask(__name__)
 CORS(app)
 
 UPLOAD_FOLDER = os.path.abspath(os.path.join(os.getcwd(), "../../sample_imagesv2"))
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+
+import gensim.downloader
+# Show all available models in gensim-data
+gensim_pretrains = list(gensim.downloader.info()['models'].keys())
+word2vec_model = gensim.downloader.load(gensim_pretrains[3]) #load word embedding model
+
+with open('../../analytics/models/image_recommender_model_florence_long_word2vectfidf_files.pkl', 'rb') as f:
+        system_image_recommender = pickle.load(f)
+        sys_tagged_sample_df = pickle.load(f)
+        text_preprocess = pickle.load(f)
+        sys_X_emb = pickle.load(f)
+        sys_text2emb = pickle.load(f)
 
 #modifing JSON Encoder
 class JsonEncoder(JSONEncoder):
@@ -30,18 +55,11 @@ def fect_test_response():
     desc = request.args.get('desc') #get query description    return 'flask_api ok'
     k = int(request.args.get('k')) #kumber of retrievals
     print("K:",k)
-   
-    with open('../../analytics/image_recommender_model_vitgpt2_tidf_files_2025_02_19_17_10_26.pkl', 'rb') as f:
-        system_image_recommender = pickle.load(f)
-        tagged_sample_df = pickle.load(f)
-        tfidf = pickle.load(f)
-        X_matrix = pickle.load(f)
-    
-    text = desc
-    tagger = 'tagging_vitgpt2'
-    output_df = system_image_recommender(tagged_sample_df,tagger,tfidf,
-                                X_matrix,text,thr_=0.0,top_n=k)
 
+    text = desc
+    tagger = 'florence_long'
+    output_df = system_image_recommender(sys_tagged_sample_df,tagger,[],sys_X_emb,text,
+                                     sys_text2emb,thr_=0.0,top_n=k)
 
     image_list = output_df.file_name.tolist() #get imagelist
     score_list = output_df.sim.tolist() #get similarity list
@@ -66,6 +84,9 @@ def serve_image(filename):
     """
     return send_from_directory(app.config["UPLOAD_FOLDER"], filename)
 
+@app.route("/api/test/")
+def api_test():
+    return "flask ok"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=5002)

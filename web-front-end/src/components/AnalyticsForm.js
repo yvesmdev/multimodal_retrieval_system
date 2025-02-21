@@ -23,8 +23,9 @@ const layout = {
     },
   };
 
-
-// Define the original object
+//const ip = "159.223.47.49"
+const ip = "localhost"
+// Define the original object 
 const originalItem = {
   img_url: face,
   score: 0.9,
@@ -44,14 +45,14 @@ const chunkedImages = chunkArray(imageArray, 3);
 const AnalyticsForm = ()=>{
 
     const [desc,setDesc] = useState('');
-    const [k,setK] = useState(6);
+    const [k,setK] = useState(10);
     const [response, setResponse] = useState(null);
-    const [rImageArray, setRImageArray] = useState(chunkedImages);
+    const [rImageArray, setRImageArray] = useState(null)//useState(chunkedImages);
    
     const handleSubmit = (e) => {
       {/*e.preventDefault(); // Prevent form from refreshing the page*/}
       // Send GET request to Flask API with query parameters from form inputs
-      const apiUrl = "http://127.0.0.1:5002/api/mmsys/query?desc="+desc+"&k="+k;
+      const apiUrl = "http://"+ip+":5002/api/mmsys/query?desc="+desc+"&k="+k;
   
       fetch(apiUrl)
         .then((res) => res.json())
@@ -91,8 +92,8 @@ return (
     >
 
    <Form.Item name='k'>
-      <span>Number of matches (max:20) </span>
-      <InputNumber min={1} max={20} value={k} onChange={(value) => setK(value)}/>
+      <span>Number of matches (max:25) </span>
+      <InputNumber min={1} max={25} value={k} onChange={(value) => setK(value)}/>
    </Form.Item>
 
       
@@ -115,7 +116,7 @@ return (
                 <td key={index} style={{ width: '30%' }}>
                   <img style={{ width: '100%' }} src={item.img_url} alt={`Image ${index + 1}`} />
                   <br />
-                  Image {1+index + 3*(rowIndex)} - Score: {item.score}
+                  Image {1+index + 3*(rowIndex)} {/*- Score: {item.score}*/}
                 </td>
               ))}
             </tr>
