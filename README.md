@@ -16,9 +16,14 @@ This project leverages **natural language processing (NLP)** and **image process
 
 Click <a href="https://drive.google.com/file/d/1pjc6ZWKiBJWZp_zcUDvawiU0fBRTn9Fu/view?usp=drive_link"> here to see the system demo </a>
 
-## **Future Improvement**
+## **Design Features**
 
-BERT embedding with latency optimisation
+  - Fast query processing and Image Retrieval
+  - Semantic Analysis allowing paraphrasing
+
+## **Feature Improvement**
+
+- BERT embedding with latency optimisation
 
 ## **Suggested Augmented Architecture**
 
