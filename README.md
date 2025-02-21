@@ -16,6 +16,10 @@ This project leverages **natural language processing (NLP)** and **image process
 
 Click <a href="https://drive.google.com/file/d/1pjc6ZWKiBJWZp_zcUDvawiU0fBRTn9Fu/view?usp=drive_link"> here to see the system demo </a>
 
+## **Future Improvement**
+
+BERT embedding with latency optimisation
+
 ## **Suggested Augmented Architecture**
 
 ![augmented_architecture](https://github.com/user-attachments/assets/0555887e-2072-40e5-94f8-2ba7b9181833)
