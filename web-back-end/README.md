@@ -21,6 +21,7 @@ Ensure you have the following installed:
 - **Python 3.x** + <a href="https://github.com/yvesmdev/multimodal_retrieval_system/blob/florence_embedding/web-back-end/flask/requirements.txt" target="_blank">requirements</a>
 - **pip** (Python package manager)
 - **Virtual environment (flask_venv)**
+- **Pickle model files in the right path(../../analytics/models/image_recommender_model_florence_long_word2vectfidf_files.pkl)**
 
 ### **1. Clone the Repository**
 ```sh
