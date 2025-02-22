@@ -12,6 +12,19 @@ This project leverages **natural language processing (NLP)** and **image process
 
 <img width="1380" alt="Screenshot 2025-02-21 at 15 35 45" src="https://github.com/user-attachments/assets/63a5028e-380a-4b16-aa65-8e543c6f3c64" />
 
+## **System Demo**
+
+Click <a href="https://drive.google.com/file/d/1pjc6ZWKiBJWZp_zcUDvawiU0fBRTn9Fu/view?usp=drive_link"> here to see the system demo </a>
+
+## **Design Features**
+
+  - Fast query processing and Image Retrieval
+  - Semantic Analysis allowing paraphrasing
+
+## **Feature Improvement**
+
+- BERT embedding with latency optimisation
+
 ## **Suggested Augmented Architecture**
 
 ![augmented_architecture](https://github.com/user-attachments/assets/0555887e-2072-40e5-94f8-2ba7b9181833)
