@@ -4,6 +4,8 @@
 
 This folder contains **three key Jupyter notebooks** used to build a **pickle-stored image recommender model**. The process involves **sampling images, tagging images with text captions, and developing a text-image matching model** using **TFIDF features, Semantic WordEmbedding and Cosine Similarity**. The final trained model is serialized into a **pickle file**, used with a Flask Python back-end that services images to a React Front end **(`models/image_recommender_model_florence_long_word2vectfidf_files.pkl`)**.
 
+The analytics can be tested in the following Notebook, <a href="https://github.com/yvesmdev/multimodal_retrieval_system/blob/florence_embedding/analytics/Text2Text_Semantic_Matching_Algorithms-Solution-Test.ipynb" target="_blank"> Click here </a>.
+
 ---
 
 ## **Tasks Performed**
