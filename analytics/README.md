@@ -11,14 +11,14 @@ The analytics can be tested in the following Notebook, <a href="https://github.c
 ## **Tasks Performed**
 
 ### **1. Image Sampling**
-- **Notebook**: `Images_Dataset_Sampling.ipynb`
+- **Notebook**: <a href="https://github.com/yvesmdev/multimodal_retrieval_system/blob/florence_embedding/analytics/Images_Dataset_Sampling.ipynb" target="_blank">`Images_Dataset_Sampling.ipynb`</a>
 - **Objective**: Extract **500 images** from a database of test images (https://www.kaggle.com/datasets/alessandrasala79/ai-vs-human-generated-dataset/data?select=test_data_v2)
 - **Process**:
   - Randomly select 500 real images for the recommender model.
   - Saves the selected dataset for further processing.
 
 ### **2. Image Tagging**
-- **Notebook**: `Captioning_Models_based_Image_Tagging_Google_Collab.ipynb`
+- **Notebook**: <a href="https://github.com/yvesmdev/multimodal_retrieval_system/blob/florence_embedding/analytics/Captioning_Models_based_Image_Tagging_Google_Collab.ipynb">`Captioning_Models_based_Image_Tagging_Google_Collab.ipynb`</a>
 - **Objective**: Generate **textual descriptions** for the sampled images using the **Florence-2 high accuracy captioning model**  or optionally using a **pretrained GPT-2 low accuracy captioning model.**.
 - **Process**:
   - Uses a **Florence-2 high accuracy captioning model** to generate image captions.
@@ -26,8 +26,8 @@ The analytics can be tested in the following Notebook, <a href="https://github.c
   - Stores image-caption pairs for further analysis.
 
 ### **3. Text-Image Matching & Model Training**
-- **Notebook**: `Text2Text_Semantic_Matching_Algorithms-FinalModel.ipynb`
-- **Test Notebook**: `Text2Text_Semantic_Matching_Algorithms-Solution-Test.ipynb`
+- **Notebook**: <a href="https://github.com/yvesmdev/multimodal_retrieval_system/blob/florence_embedding/analytics/Text2Text_Semantic_Matching_Algorithms-FinalModel.ipynb" target="_blank">`Text2Text_Semantic_Matching_Algorithms-FinalModel.ipynb`</a>
+- **Test Notebook**: <a href="https://github.com/yvesmdev/multimodal_retrieval_system/blob/florence_embedding/analytics/Text2Text_Semantic_Matching_Algorithms-Solution-Test.ipynb" target="_blank">>`Text2Text_Semantic_Matching_Algorithms-Solution-Test.ipynb`</a>
 - **Objective**: Implement **TF-IDF-Semantic WordEmbedding and Cosine Similarity** for text-based image retrieval and save the model files using **pickle** for export.
 - **Process**:
   - Converts image captions into vectorized representations using **TF-IDF-Semantic-WordEmbedding**.
