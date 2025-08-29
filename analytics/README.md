@@ -37,6 +37,14 @@ The analytics can be tested in the following Notebook, <a href="https://github.c
 
 ---
 
+### **4. Scientific References**
+
+[1] Word2Vec - T. Mikolov, Efficient estimation of word representations in vector space,
+arXiv preprint arXiv:1301.3781 3781 (2013) <a href="https://arxiv.org/pdf/1301.3781" target="_blank"></a>
+
+
+
+
 ## **Installation & Setup**
 ### **1. Install Required Dependencies**
 Run the following command to install the required Python packages:
